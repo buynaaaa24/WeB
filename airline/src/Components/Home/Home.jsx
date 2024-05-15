@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 //Imported assets
 import video from '../../assets/video.mp4'
 import aeroplane from '../../assets/takeOff.png'
 
+//Import AOS
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 const Home = () => {
   return (
     <div className='home flex container'>
@@ -15,7 +18,7 @@ const Home = () => {
       <div className="homeImages flex">
         
         <div className="videoDiv">
-          <video src={video} autoPlay muted loop className='video'></video>
+          <img src={sky} autoPlay muted loop className='video'/>
         </div>
 
         <img src={aeroplane} className='plane'/>

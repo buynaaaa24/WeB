@@ -1,9 +1,12 @@
 import React from 'react'
 
+//imported images
+import gridImage from '../../assets/images-Grid2.png'
 const Support = () => {
   return (
     <div className='support container section'>
       <div className="sectionContainer">
+
         <div className="tittleDiv">
           <small>travel support</small>
           <h2>Plan your travel with confidence</h2>
@@ -12,11 +15,36 @@ const Support = () => {
         </div>
 
         <div className="infoDiv grid">
+          
           <div className="textDiv grid">
             <div className="singleInfo">
               <span className='number'>01</span>
-              <h4></h4>
+              <h4>Travel req</h4>
+              <p>
+                Find help
+              </p>
             </div>
+
+            <div className="singleInfo">
+              <span className='number colorOne'>02</span>
+              <h4>Travel req</h4>
+              <p>
+                Find help
+              </p>
+            </div>
+
+            <div className="singleInfo">
+              <span className='number colorTwo'>03</span>
+              <h4>Travel req</h4>
+              <p>
+                Find help
+              </p>
+            </div>
+
+          </div>
+
+          <div className="imgDiv">
+            <img src={gridImage} />
           </div>
         </div>
 

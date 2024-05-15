@@ -1,9 +1,12 @@
 import React from 'react'
 
 //imported icons
+import {SiConsul} from 'react-icons/si'
 import { HiOutlineLocationMarker } from "react-icons/hi";
-import { RiAccountPinCircleLine } from "react-icons/hi";
+import { RiAccountPinCircleLine} from "react-icons/hi";
 import { RxCalendar } from "react-icons/rx";
+//import './main.scss';
+
 
 const Search = () => {
   return (
@@ -63,7 +66,7 @@ const Search = () => {
           {/*Single Input*/}
           <div className="singleInput flex">
             <div className="ivonDiv">
-              <RxCalendar className='icon'/>
+              <SiConsul className='icon'/>
             </div>
             <div className="texts">
               <h4>Check Out</h4>

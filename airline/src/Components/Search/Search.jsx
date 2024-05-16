@@ -1,17 +1,26 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 //imported icons
-import {SiConsul} from 'react-icons/si'
 import { HiOutlineLocationMarker } from "react-icons/hi";
-import { RiAccountPinCircleLine} from "react-icons/hi";
+import { RiAccountPinCircleLine } from 'react-icons/ri';
 import { RxCalendar } from "react-icons/rx";
-//import './main.scss';
 
+
+//import aos
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const Search = () => {
+
+  //useEffevt to set animation duration
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  },[])
+
+
   return (
     <div className='search container section'>
-      <div className="sectionContainer grid">
+      <div data-aos='fade-up' data-aos-duration='2500' className="sectionContainer grid">
 
         <div className="btns flex">
 
@@ -29,7 +38,7 @@ const Search = () => {
 
         </div>
 
-        <div className="searchInputs flex">
+        <div data-aos='fade-up' data-aos-duration='2000' className="searchInputs flex">
           {/*Single Input*/}
           <div className="singleInput flex">
             <div className="ivonDiv">
@@ -47,7 +56,7 @@ const Search = () => {
               <RiAccountPinCircleLine className='icon'/>
             </div>
             <div className="texts">
-              <h4>Tavel</h4>
+              <h4>Tavelers</h4>
               <input type="text" placeholder='Add guests' />
             </div>
           </div>
@@ -66,7 +75,7 @@ const Search = () => {
           {/*Single Input*/}
           <div className="singleInput flex">
             <div className="ivonDiv">
-              <SiConsul className='icon'/>
+              <RxCalendar className='icon'/>
             </div>
             <div className="texts">
               <h4>Check Out</h4>
@@ -74,7 +83,7 @@ const Search = () => {
             </div>
           </div>
 
-          <button className='btn btnBlock'>Search Flight</button>
+          <button className='btn btnBlock flex'>Search Flight</button>
 
         </div>
 

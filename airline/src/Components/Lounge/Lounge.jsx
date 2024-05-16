@@ -1,23 +1,34 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 //Imported images
 import imageGrid from '../../assets/images-Grid2.png'
 
+//import aos
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 const Lounge = () => {
+
+
+  //useEffevt to set animation duration
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  },[])
+
   return (
     <div className='lounge container section'>
       <div className="sectionContainer grid">
 
-      <div className="imgDiv">
+      <div data-aos='fade-left' data-aos-duration='2500' className="imgDiv">
         <img src={imageGrid}/>
       </div>
 
       <div className="textDiv">
-        <h2>Unaccompained Minor Lounge</h2>
+        <h2 data-aos='fade-down' data-aos-duration='2500'>Unaccompained Minor Lounge</h2>
 
         <div className="grids grid">
 
-        <div className="singleGrid">
+        <div data-aos='fade up' data-aos-duration='2500' className="singleGrid">
           <span className='gridTitle'>
             Help through the airport
           </span>
@@ -26,7 +37,7 @@ const Lounge = () => {
           </p>
         </div>
 
-        <div className="singleGrid">
+        <div data-aos='fade up' data-aos-duration='2500' className="singleGrid">
           <span className='gridTitle'>
             Priority Boarding
           </span>
@@ -35,7 +46,7 @@ const Lounge = () => {
           </p>
         </div>
 
-        <div className="singleGrid">
+        <div data-aos='fade up' data-aos-duration='2500' className="singleGrid">
           <span className='gridTitle'>
             Care on the flight
           </span>
@@ -44,7 +55,7 @@ const Lounge = () => {
           </p>
         </div>
 
-        <div className="singleGrid">
+        <div data-aos='fade up' data-aos-duration='2500' className="singleGrid">
           <span className='gridTitle'>
             Chauffeur-drive service
           </span>

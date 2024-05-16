@@ -24,32 +24,32 @@ const travelers = [
     id: 1,
     destinationImage: paris,
     travelerImage: traveler1,
-    travelerName: 'IsraTech',
-    socialLink: '@isratech8'
+    travelerName: 'Buynaa',
+    socialLink: '@buynaa'
   },
 
   {
     id: 2,
     destinationImage: NewYork,
     travelerImage: traveler2,
-    travelerName: 'IsraTech',
-    socialLink: '@isratech8'
+    travelerName: 'Ujin',
+    socialLink: '@Ujin'
   },
 
   {
     id: 3,
     destinationImage: dubai,
     travelerImage: traveler3,
-    travelerName: 'IsraTech',
-    socialLink: '@isratech8'
+    travelerName: 'Turuu',
+    socialLink: '@TUrbo'
   },
 
   {
     id: 4,
     destinationImage: london,
     travelerImage: traveler4,
-    travelerName: 'IsraTech',
-    socialLink: '@isratech8'
+    travelerName: 'MdkuHUN',
+    socialLink: '@MdkuHUN'
   },
 ]
 
@@ -64,7 +64,7 @@ const Travelers = () => {
     <div className='travelers container section'>
       <div className="sectionContainer">
         <h2 data-aos='fade-down' data-aos-duration='2500'>
-          Top travelers of this month!
+          Аялагчид!
         </h2>
 
         <div className="travelersContainer grid">

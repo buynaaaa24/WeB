@@ -35,7 +35,7 @@ const Info = () => {
             <RxCalendar className='icon'/>
             </div>
             <span className='cardTitle'>Хялбар захиалга</span>
-            <p>You can also call airlines from your phone and book</p>
+            <p>Төвлөрсөн нислэгүүдээс харан шууд захиалах</p>
           </div>
 
           <div data-aos='fade-up' data-aos-duration='3500' className="singleCard grid">
@@ -43,7 +43,7 @@ const Info = () => {
             <BsShieldCheck className='icon'/>
             </div>
             <span className='cardTitle'>Ухаалаг захиалга</span>
-            <p>You can also call airlines from your phone and book</p>
+            <p>Хүссэн газраасаа интернет ашиглан захиалаарай</p>
           </div>
 
           <div data-aos='fade-up' data-aos-duration='4500' className="singleCard grid">
@@ -51,7 +51,7 @@ const Info = () => {
             <BsBookmarkCheck className='icon'/>
             </div>
             <span className='cardTitle'>Илүү их аял</span>
-            <p>You can also call airlines from your phone and book</p>
+            <p>Бидэнтэй хамт илүү аялаж, дурсамж бүтээ</p>
           </div>
 
         </div>

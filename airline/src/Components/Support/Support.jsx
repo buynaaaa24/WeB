@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 
 //imported images
-import gridImage from '../../assets/images-Grid2.png'
+import gridImage from '../../assets/he.jpg'
 
 //import aos
 import Aos from 'aos';
@@ -12,7 +12,7 @@ const Support = () => {
 
   //useEffevt to set animation duration
   useEffect(()=>{
-    Aos.init({duration: 2000})
+    Aos.init({duration: 1000})
   },[])
 
   return (
@@ -32,7 +32,7 @@ const Support = () => {
               <span className='number'>01</span>
               <h4>Чиглэлээ сонго</h4>
               <p>
-                Find help
+                Хаанаас хаа хүрэх вэ?
               </p>
             </div>
 
@@ -40,7 +40,7 @@ const Support = () => {
               <span className='number colorOne'>02</span>
               <h4>Явах, буцах өдөр, цагаа сонго</h4>
               <p>
-                Find help
+                Таньд зориулсан бүх өдрийн нислэг
               </p>
             </div>
 
@@ -48,7 +48,7 @@ const Support = () => {
               <span className='number colorTwo'>03</span>
               <h4>Суудалын ангилалаа сонго</h4>
               <p>
-                Find help
+                Мөнгө байвал 1р зэрэглэлд суугаарай
               </p>
             </div>
 

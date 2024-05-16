@@ -46,7 +46,7 @@ const Search = () => {
             </div>
             <div className="texts">
               <h4 className="Location">Байршил</h4>
-              <input type="text" placeholder='Where do you want to go' />
+              <input type="text" placeholder='Хаашаа аялах вэ' />
             </div>
           </div>
 
@@ -57,7 +57,7 @@ const Search = () => {
             </div>
             <div className="texts">
               <h4>Аялагчид</h4>
-              <input type="text" placeholder='Add guests' />
+              <input type="text" placeholder='Аялах хүмүүс' />
             </div>
           </div>
 
@@ -68,7 +68,7 @@ const Search = () => {
             </div>
             <div className="texts">
               <h4>Явах өдөр</h4>
-              <input type="text" placeholder='Add date' />
+              <input type="text" placeholder='Өдрөө сонгоно уу' />
             </div>
           </div>
 
@@ -79,7 +79,7 @@ const Search = () => {
             </div>
             <div className="texts">
               <h4>Буцах өдөр</h4>
-              <input type="text" placeholder='Add date' />
+              <input type="text" placeholder='Өдрөө сонгоно уу' />
             </div>
           </div>
 

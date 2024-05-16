@@ -13,18 +13,18 @@ const Subscribe = () => {
   },[])
 
 
-  return (
-    <div className='subscribe section'>
-      <div data-aos='fade-up' data-aos-duration='2500' className="sectionContainer container">
-        <h2>Subscribe</h2>
-        <div className="inputDiv flex">
-          <input type="text" placeholder='Enter your email address' />
-          <button className='btn'>Subscribe</button>
-        </div>
-      </div>
+  // return (
+  //   // <div className='subscribe section'>
+  //   //   <div data-aos='fade-up' data-aos-duration='2500' className="sectionContainer container">
+  //   //     <h2></h2>
+  //   //     <div className="inputDiv flex">
+  //   //       <input type="text" placeholder='Enter your email address' />
+  //   //       <button className='btn'></button>
+  //   //     </div>
+  //   //   </div>
       
-    </div>
-  )
+  //   // </div>
+  // )
 }
 
 export default Subscribe

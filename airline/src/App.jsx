@@ -8,6 +8,7 @@ import Lounge from './Components/Lounge/Lounge'
 import Travelers from './Components/Travelers/Travelers'
 import Subscribers from './Components/Subscribers/Subscribe'
 import Footer from './Components/Footer/Footer'
+
 import './main.scss';
 
 const App = () => {

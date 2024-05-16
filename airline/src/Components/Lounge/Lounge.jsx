@@ -1,76 +1,70 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react';
 
-//Imported images
-import imageGrid from '../../assets/images-Grid2.png'
+// Import image
+import imageGrid from '../../assets/zaavar.jpg';
 
-//import aos
+// Import AOS
 import Aos from 'aos';
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
 
 const Lounge = () => {
-
-
-  //useEffevt to set animation duration
-  useEffect(()=>{
-    Aos.init({duration: 2000})
-  },[])
+  // useEffect to set animation duration
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
-    <div className='lounge container section'>
+    <div className="lounge container section">
       <div className="sectionContainer grid">
-
-      <div data-aos='fade-left' data-aos-duration='2500' className="imgDiv">
-        <img src={imageGrid}/>
-      </div>
-
-      <div className="textDiv">
-        <h2 data-aos='fade-down' data-aos-duration='2500'>Unaccompained Minor Lounge</h2>
-
-        <div className="grids grid">
-
-        <div data-aos='fade up' data-aos-duration='2500' className="singleGrid">
-          <span className='gridTitle'>
-            Help through the airport
-          </span>
-          <p>
-            You can also call airlines from your phone and book a flight ticket to one of your favourite destinations.
-          </p>
+        <div data-aos="fade-left" data-aos-duration="2500" className="imgDiv">
+          {/* Adjust image size using CSS */}
+          <img src={imageGrid} style={{ width: '200rem', height: 'auto' }} />
         </div>
 
-        <div data-aos='fade up' data-aos-duration='2500' className="singleGrid">
-          <span className='gridTitle'>
-            Priority Boarding
-          </span>
-          <p>
-            You can also call airlines from your phone and book a flight ticket to one of your favourite destinations.
-          </p>
+        <div className="textDiv">
+          <h2 data-aos="fade-down" data-aos-duration="2500">Мэдээлэл</h2>
+
+          <div className="grids grid">
+            <div data-aos="fade up" data-aos-duration="2500" className="singleGrid">
+              <span className="gridTitle">
+                <b>Онгоц дотор юу анхаарах вэ</b>
+              </span>
+              <p>
+                Суудлын бүсээ сайн бүслээд зорьсон газраа очих хүртэл Netflix&Chill
+              </p>
+            </div>
+
+            <div data-aos="fade up" data-aos-duration="2500" className="singleGrid">
+              <span className="gridTitle">
+                <b>Газардах үед</b>
+              </span>
+              <p>
+                Нисгэгч зааварчилгаа өгтөл тайван хүлээж суух, яарч сандран хаалган дээр зогсохгүй байх.
+              </p>
+            </div>
+
+            <div data-aos="fade up" data-aos-duration="2500" className="singleGrid">
+              <span className="gridTitle">
+                <b>Онгоц сүйрэх үед</b>
+              </span>
+              <p>
+                Үхэлтэйгээ эвлэрээд уйлах, хайртай хүнээ тэврэх, амьдралаа эргэцүүлж бодох. Хэрвээ амьд гарвал яаж тусламж дуудахаа бодох.
+              </p>
+            </div>
+
+            <div data-aos="fade up" data-aos-duration="2500" className="singleGrid">
+              <span className="gridTitle">
+                <b> Хориглох зүйлс</b>
+              </span>
+              <p>
+                Хэт их уйлдаг бага насны хүүхэд, уух зүйлс болон шингэн идэх бүтээгдэхүүн.Мансууруулах бодис болон галт зэвсэгийг хориглоно.
+              </p>
+            </div>
+          </div>
         </div>
-
-        <div data-aos='fade up' data-aos-duration='2500' className="singleGrid">
-          <span className='gridTitle'>
-            Care on the flight
-          </span>
-          <p>
-            You can also call airlines from your phone and book a flight ticket to one of your favourite destinations.
-          </p>
-        </div>
-
-        <div data-aos='fade up' data-aos-duration='2500' className="singleGrid">
-          <span className='gridTitle'>
-            Chauffeur-drive service
-          </span>
-          <p>
-            You can also call airlines from your phone and book a flight ticket to one of your favourite destinations.
-          </p>
-        </div>
-
-        </div>
-      </div>
-
-
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Lounge
+export default Lounge;

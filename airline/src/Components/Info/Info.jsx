@@ -22,9 +22,9 @@ const Info = () => {
       <div className="infoContainer container">
 
         <div className="titleDiv flex">
-          <h2 data-aos='fade-right' data-aos-duration='2500'>Travel to make memories all around the world</h2>
+          <h2 data-aos='fade-right' data-aos-duration='2500'>Дэлхийгээр аялаж дурсамж бүтээ</h2>
           <button data-aos='fade-left' data-aos-duration='2500' className='btn'>
-            View all
+            Бүгдийг үзэх
           </button>
         </div>
 
@@ -34,7 +34,7 @@ const Info = () => {
             <div className="iconDiv flex">
             <RxCalendar className='icon'/>
             </div>
-            <span className='cardTitle'>Book & Relax</span>
+            <span className='cardTitle'>Хялбар захиалга</span>
             <p>You can also call airlines from your phone and book</p>
           </div>
 
@@ -42,7 +42,7 @@ const Info = () => {
             <div className="iconDiv flex colorOne">
             <BsShieldCheck className='icon'/>
             </div>
-            <span className='cardTitle'>Book & Relax</span>
+            <span className='cardTitle'>Ухаалаг захиалга</span>
             <p>You can also call airlines from your phone and book</p>
           </div>
 
@@ -50,7 +50,7 @@ const Info = () => {
             <div className="iconDiv flex colorTwo">
             <BsBookmarkCheck className='icon'/>
             </div>
-            <span className='cardTitle'>Book & Relax</span>
+            <span className='cardTitle'>Илүү их аял</span>
             <p>You can also call airlines from your phone and book</p>
           </div>
 

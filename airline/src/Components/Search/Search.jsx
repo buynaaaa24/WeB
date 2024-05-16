@@ -25,15 +25,15 @@ const Search = () => {
         <div className="btns flex">
 
           <div className="singleBtn">
-            <span className="Economy"></span>
+            <span className="Economy">Энгийн ангилал</span>
           </div>
 
           <div className="singleBtn">
-            <span className="Business class"></span>
+            <span className="Business class">Бизнес ангилал</span>
           </div>
 
           <div className="singleBtn">
-            <span className="First class"></span>
+            <span className="First class">Нэгдүгээр зэрэглэл</span>
           </div>
 
         </div>
@@ -45,7 +45,7 @@ const Search = () => {
               <HiOutlineLocationMarker className='icon'/>
             </div>
             <div className="texts">
-              <h4 className="Location"></h4>
+              <h4 className="Location">Байршил</h4>
               <input type="text" placeholder='Where do you want to go' />
             </div>
           </div>
@@ -56,7 +56,7 @@ const Search = () => {
               <RiAccountPinCircleLine className='icon'/>
             </div>
             <div className="texts">
-              <h4>Tavelers</h4>
+              <h4>Аялагчид</h4>
               <input type="text" placeholder='Add guests' />
             </div>
           </div>
@@ -67,7 +67,7 @@ const Search = () => {
               <RxCalendar className='icon'/>
             </div>
             <div className="texts">
-              <h4>Check In</h4>
+              <h4>Явах өдөр</h4>
               <input type="text" placeholder='Add date' />
             </div>
           </div>
@@ -78,12 +78,12 @@ const Search = () => {
               <RxCalendar className='icon'/>
             </div>
             <div className="texts">
-              <h4>Check Out</h4>
+              <h4>Буцах өдөр</h4>
               <input type="text" placeholder='Add date' />
             </div>
           </div>
 
-          <button className='btn btnBlock flex'>Search Flight</button>
+          <button className='btn btnBlock flex'>Нислэг хайх</button>
 
         </div>
 

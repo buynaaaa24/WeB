@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 //Imported Icons
 import { SiConsul } from "react-icons/si";
-import { BsPhoneVibrate } from "react-icons/bs";
+import { BsDisplay, BsPhoneVibrate, BsSticky } from "react-icons/bs";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { CgMenuGridO } from 'react-icons/cg';
 
@@ -24,7 +24,6 @@ const Navbar = () => {
 
   //add a background color on the second navbar
   const [noBg, addBg] = useState('navBarTwo')
-
   const addBgColor = ()=>{
     if(window.scrollY >= 10){
       addBg('navBarTwo navbar_With_bg')
@@ -44,13 +43,13 @@ const Navbar = () => {
         </div>
 
         <div className="none flex">
-          <li className='flex'><BsPhoneVibrate className='icon'/>Support</li>
-          <li className='flex'><AiOutlineGlobal className='icon'/>Languages</li>
+          <li className='flex'><BsPhoneVibrate className='icon'/>Тусламж</li>
+          <li className='flex'><AiOutlineGlobal className='icon'/>Хэлний сонголт</li>
         </div>
 
         <div className="atb flex">
-          <span>Sign In</span>
-          <span>Sign Out</span>
+          <span>Нэвтрэх</span>
+          <span>Гарах</span>
         </div>
 
       </div>
@@ -63,27 +62,25 @@ const Navbar = () => {
 
         <div className={active}>
           <ul className='menu flex'>
-            <li onClick={removeNavBar} className="listItem">Home</li>
-            <li onClick={removeNavBar} className="listItem">About</li>
-            <li onClick={removeNavBar} className="listItem">Offers</li>
-            <li onClick={removeNavBar} className="listItem">Seats</li>
-            <li onClick={removeNavBar} className="listItem">Destinations</li>
+            <li onClick={removeNavBar} className="listItem">Нүүр</li>
+            <li onClick={removeNavBar} className="listItem">Бидний тухай</li>
+            <li onClick={removeNavBar} className="listItem">Санал хүсэлт</li>
+            <li onClick={removeNavBar} className="listItem">Мэдээлэл</li>
+            <li onClick={removeNavBar} className="listItem">Нислэгийн хуваарь</li>
           </ul>
 
           <button onClick={removeNavBar} className='btn flex btnOne'>
-            Contact
+            Холбогдох
           </button>
         </div>
 
         <button className='btn flex btnTwo'>
-          Contact
+          Холбогдох
         </button>
 
         <div onClick={showNavBar} className="toggleIcon">
           <CgMenuGridO className='icon'/>
         </div>
-
-
 
       </div>
     </div>

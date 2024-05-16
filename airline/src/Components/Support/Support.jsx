@@ -20,10 +20,9 @@ const Support = () => {
       <div className="sectionContainer">
 
         <div className="tittleDiv">
-          <small>travel support</small>
-          <h2>Plan your travel with confidence</h2>
-          <p>Find help with booking and travel plans, see what to expect along 
-            the journey!</p>
+          <small>Аяллын дэмжлэг</small>
+          <h2>Итгэлтэйгээр аяллаа төлөвлө</h2>
+          <p>Захиалга болон аяллын төлөвлөгөөний талаар тусламж хайж, аяллын явцад юу хүлээж байгааг хараарай!</p>
         </div>
 
         <div className="infoDiv grid">
@@ -31,7 +30,7 @@ const Support = () => {
           <div className="textDiv grid">
             <div data-aos='fade-down' data-aos-duration='2500' className="singleInfo">
               <span className='number'>01</span>
-              <h4>Travel req</h4>
+              <h4>Чиглэлээ сонго</h4>
               <p>
                 Find help
               </p>
@@ -39,7 +38,7 @@ const Support = () => {
 
             <div data-aos='fade-down' data-aos-duration='3500' className="singleInfo">
               <span className='number colorOne'>02</span>
-              <h4>Travel req</h4>
+              <h4>Явах, буцах өдөр, цагаа сонго</h4>
               <p>
                 Find help
               </p>
@@ -47,7 +46,7 @@ const Support = () => {
 
             <div data-aos='fade-down' data-aos-duration='4500' className="singleInfo">
               <span className='number colorTwo'>03</span>
-              <h4>Travel req</h4>
+              <h4>Суудалын ангилалаа сонго</h4>
               <p>
                 Find help
               </p>

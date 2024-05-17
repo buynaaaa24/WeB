@@ -69,10 +69,10 @@ const Navbar = () => {
                         <Link to="/about" onClick={removeNavBar}>
                             <li className="listItem">Бидний тухай</li>
                         </Link>
-                        <Link to="/support" onClick={removeNavBar}>
+                        <Link to="/complain" onClick={removeNavBar}>
                             <li className="listItem">Санал хүсэлт</li>
                         </Link>
-                        <Link to="/info" onClick={removeNavBar}>
+                        <Link to="/information" onClick={removeNavBar}>
                             <li className="listItem">Мэдээлэл</li>
                         </Link>
                         <Link to="/schedule" onClick={removeNavBar}>

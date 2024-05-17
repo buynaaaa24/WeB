@@ -10,6 +10,8 @@ import Subscribers from './Components/Subscribers/Subscribe';
 import Footer from './Components/Footer/Footer';
 import Login from './Components/Auth/Login';
 import Signup from './Components/Auth/Signup';
+import Information from  './Components/Information/Information';
+import Complain from './Components/Comp/Complain';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './main.scss';
 
@@ -28,6 +30,8 @@ const App = () => {
                 <Route path="/subscribers" element={<Subscribers />} />
                 <Route path="/login" element={<Login/>} />
                 <Route path="/signup" element={<Signup/>}/>
+                <Route path="/complain" element={<Complain/>}/>
+                <Route path="/information" element={<Information/>}/>
             </Routes>
             <Footer />
         </Router>

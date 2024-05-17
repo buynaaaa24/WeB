@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
+import { Link, Route } from 'react-router-dom';
 
 //Imported Icons
 import { SiConsul } from "react-icons/si";
@@ -9,42 +10,42 @@ import { CgMenuGridO } from 'react-icons/cg';
 //Imported Images
 import logo from '../../assets/logo.png'
 
+
 const Navbar = () => {
 
   //remove the navbar in the small width screen
   const [active, setActive] = useState('navBarMenu')
-  const showNavBar = ()=>{
+  const showNavBar = () => {
     setActive('navBarMenu showNavBar')
   }
 
-  const removeNavBar = ()=>{
+  const removeNavBar = () => {
     setActive('navBarMenu')
   }
 
-
   //add a background color on the second navbar
   const [noBg, addBg] = useState('navBarTwo')
-  const addBgColor = ()=>{
-    if(window.scrollY >= 10){
+  const addBgColor = () => {
+    if (window.scrollY >= 10) {
       addBg('navBarTwo navbar_With_bg')
-    }else{
+    } else {
       addBg('navBarTwo')
     }
   }
-  window.addEventListener('scroll',addBgColor)
+  window.addEventListener('scroll', addBgColor)
 
 
-  return(
+  return (
     <div className="navBar flex">
 
       <div className="navBarOne flex">
-        <div>
-        <SiConsul className='icon'/>
-        </div>
+        {/* <div>
+          <SiConsul className='icon' />
+        </div> */}
 
         <div className="none flex">
-          <li className='flex'><BsPhoneVibrate className='icon'/>Тусламж</li>
-          <li className='flex'><AiOutlineGlobal className='icon'/>Хэлний сонголт</li>
+          <li className='flex'><BsPhoneVibrate className='icon' />Тусламж</li>
+          <li className='flex'><AiOutlineGlobal className='icon' />Хэлний сонголт</li>
         </div>
 
         <div className="atb flex">
@@ -57,16 +58,26 @@ const Navbar = () => {
       <div className={noBg}>
 
         <div className="logoDiv">
-          <img src={logo} className='Logo'/>
+          <img src={logo} className='Logo' alt='Logo' />
         </div>
 
         <div className={active}>
           <ul className='menu flex'>
-            <li onClick={removeNavBar} className="listItem">Нүүр</li>
-            <li onClick={removeNavBar} className="listItem">Бидний тухай</li>
-            <li onClick={removeNavBar} className="listItem">Санал хүсэлт</li>
-            <li onClick={removeNavBar} className="listItem">Мэдээлэл</li>
-            <li onClick={removeNavBar} className="listItem">Нислэгийн хуваарь</li>
+          <Link to="/" onClick={removeNavBar}>
+                            <li className="listItem">Нүүр</li>
+                        </Link>
+                        <Link to="/about" onClick={removeNavBar}>
+                            <li className="listItem">Бидний тухай</li>
+                        </Link>
+                        <Link to="/support" onClick={removeNavBar}>
+                            <li className="listItem">Санал хүсэлт</li>
+                        </Link>
+                        <Link to="/info" onClick={removeNavBar}>
+                            <li className="listItem">Мэдээлэл</li>
+                        </Link>
+                        <Link to="/schedule" onClick={removeNavBar}>
+                            <li className="listItem">Нислэгийн хуваарь</li>
+                        </Link>
           </ul>
 
           <button onClick={removeNavBar} className='btn flex btnOne'>
@@ -79,7 +90,7 @@ const Navbar = () => {
         </button>
 
         <div onClick={showNavBar} className="toggleIcon">
-          <CgMenuGridO className='icon'/>
+          <CgMenuGridO className='icon' />
         </div>
 
       </div>

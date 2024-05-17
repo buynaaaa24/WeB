@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 
 //imported images
-import gridImage from '../../assets/he.jpg'
+import gridImage from '../../assets/paris.jpg'
 
 //import aos
 import Aos from 'aos';
@@ -28,11 +28,12 @@ const Support = () => {
         <div className="infoDiv grid">
           
           <div className="textDiv grid">
+
             <div data-aos='fade-down' data-aos-duration='2500' className="singleInfo">
               <span className='number'>01</span>
               <h4>Чиглэлээ сонго</h4>
               <p>
-                Хаанаас хаа хүрэх вэ?
+                Хаанаас хаашаа аялах вэ?
               </p>
             </div>
 
@@ -46,9 +47,9 @@ const Support = () => {
 
             <div data-aos='fade-down' data-aos-duration='4500' className="singleInfo">
               <span className='number colorTwo'>03</span>
-              <h4>Суудалын ангилалаа сонго</h4>
+              <h4>Суудлын ангилалаа сонго</h4>
               <p>
-                Мөнгө байвал 1р зэрэглэлд суугаарай
+                Мөнгө байвал 1-р зэрэглэлд суугаарай
               </p>
             </div>
 

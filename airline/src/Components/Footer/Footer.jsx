@@ -1,25 +1,28 @@
 import React from 'react';
-// import './Header.css'; // Assuming the CSS file is named Header.css
-
-function Header() {
+import turkishAirlines from '../../assets/turkish-airlines.png';
+import koreanAir from '../../assets/korean-air.png';
+import emirates from '../../assets/emirates.png';
+import miat from '../../assets/miat.png';
+import qatarAirways from '../../assets/qatar-airways.png';
+function Footer() {
   return (
-    <header className="header">
+    <footer className="footer">
       <div className="logos">
-        <img src="picture1.png" alt="Turkish Airlines" />
-        <img src="picture2.png" alt="Korean Air" />
-        <img src="picture3.png" alt="Emirates" />
-        <img src="picture4.png" alt="MIAT" />
-        <img src="qatar-airways-logo.png" alt="Qatar Airways" />
+        <img className='turkish-airlines' src={turkishAirlines} alt="Turkish Airlines" />
+        <img className='korean-air' src={koreanAir} alt="Korean Air" />
+        <img className='emirates' src={emirates} alt="Emirates" />
+        <img className='miat' src={miat} alt="MIAT" />
+        <img className='qatar' src={qatarAirways} alt="Qatar Airways" />
       </div>
       <nav className="navigation">
-        <a href="#home">Нүүр</a>
-        <a href="#about-us">Бидний тухай</a>
-        <a href="#request">Санал хүсэлт</a>
-        <a href="#information">Мэдээлэл</a>
-        <a href="#flight-schedule">Нислэгийн хуваарь</a>
+        <a href="/home">Нүүр</a>
+        <a href="/about">Бидний тухай</a>
+        <a href="/support">Санал хүсэлт</a>
+        <a href="/info">Мэдээлэл</a>
+        <a href="/schedule">Нислэгийн хуваарь</a>
       </nav>
-    </header>
+    </footer>
   );
 }
 
-export default Header;
+export default Footer;

@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react'
 
 //imported Destination Images
-import paris from '../../assets/paris.jpg'
-import NewYork from '../../assets/NewYork.png'
-import dubai from '../../assets/dubai.png'
+import buynaa from '../../assets/Buynaa.jpg'
+import ujin from '../../assets/Ujin.jpg'
+import toroo from '../../assets/Toroo.jpg'
 import london from '../../assets/london.png'
 
 //imported Traveler Images
@@ -16,13 +16,10 @@ import traveler4 from '../../assets/user(4).png'
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 
-
-//We are going to use high order array method called Map to display all the data
-
 const travelers = [
   {
     id: 1,
-    destinationImage: paris,
+    destinationImage: buynaa,
     travelerImage: traveler1,
     travelerName: 'Buynaa',
     socialLink: '@buynaa'
@@ -30,26 +27,26 @@ const travelers = [
 
   {
     id: 2,
-    destinationImage: NewYork,
+    destinationImage: ujin,
     travelerImage: traveler2,
     travelerName: 'Ujin',
-    socialLink: '@Ujin'
+    socialLink: '@tsgtsujin'
   },
 
   {
     id: 3,
-    destinationImage: dubai,
+    destinationImage: toroo,
     travelerImage: traveler3,
     travelerName: 'Turuu',
-    socialLink: '@TUrbo'
+    socialLink: '@turuu'
   },
 
   {
     id: 4,
     destinationImage: london,
     travelerImage: traveler4,
-    travelerName: 'MdkuHUN',
-    socialLink: '@MdkuHUN'
+    travelerName: 'User',
+    socialLink: '@user'
   },
 ]
 
@@ -66,10 +63,7 @@ const Travelers = () => {
         <h2 data-aos='fade-down' data-aos-duration='2500'>
           Аялагчид!
         </h2>
-
         <div className="travelersContainer grid">
-
-         
             {
               travelers.map(({id, destinationImage, travelerImage, travelerName, socialLink})=>{
                 return(

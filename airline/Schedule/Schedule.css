@@ -1,0 +1,216 @@
+.App {
+    top: 50vh;
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  
+  main {
+    padding: 20px;
+  }
+  
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: hsl(225, 50%, 48%);
+  }
+  
+  .search-form div {
+    margin: 10px 0;
+  }
+  .catgo{
+    margin-top: 120px;
+  }
+  
+  .flights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .flight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+  }
+  
+  .flight-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+
+.departure-date {
+  color: #ddd;
+}
+
+.content {
+  padding: 20px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.time {
+  font-size: 18px;
+}
+
+.route {
+  display: flex;
+  align-items: center;
+}
+
+.location {
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+.arrow {
+  font-size: 18px;
+}
+
+.passenger {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.book-button {
+  text-align: center;
+}
+
+.book-button button {
+  background-color: #0a4da2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.book-button button:hover {
+  background-color: #073b7b;
+}
+
+.navigation-bar {
+    display: flex;
+    background-color: #0a0a2a;
+    border: 1px solid #3b5998;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    margin-top: 110px;
+  }
+  
+  .nav-item {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    border-right: 1px solid #3b5998;
+  }
+  
+  .nav-item:last-child {
+    border-right: none;
+  }
+  
+  .dropdown-arrow {
+    margin-left: 5px;
+  }
+  
+  .nav-item:hover {
+    background-color: #333366;
+  }
+  
+  
+
+
+  /* haashaa */
+  .search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #0a0a23; /* Dark background color */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .form-group label.icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .form-group input,
+  .form-group select {
+    background-color: #ffffff;
+    color: #000000;
+    margin-left: 10px;
+  }
+  
+  .form-group button {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  .form-group button:hover {
+    background-color: #e0e0e0;
+  }
